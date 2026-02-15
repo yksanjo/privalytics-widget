@@ -1,0 +1,14 @@
+{
+  "name": "privalytics-widget",
+  "version": "1.0.0",
+  "description": "Privalytics Widget - Drop-in widget for static sites",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sql.js": "^1.10.2",
+    "uuid": "^9.0.0"
+  }
+}
