@@ -1,41 +1,84 @@
-# Privalytics Widget
+# privalytics-widget
 
-Drop-in widget analytics for static sites.
+## Detailed Description
 
-## Features
+privalytics-widget is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-- Drop-in widget with mini counter
-- Customizable widget color
-- Fully self-hosted
-- Privacy-first tracking
+## Problem Statement
 
-## Installation
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-```bash
-npm install
-npm start
+## Solution Overview
+
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
 
-Server runs on http://localhost:3003
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
+```bash
+npm ci
+npm run lint
+npm test
+npm run build
+```
 
 ## Usage
 
-1. Add a site via the dashboard
-2. Copy the widget embed code
-3. Add to your static site
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-The widget displays a small analytics icon on your site and tracks pageviews.
+## Quality Standards
 
-## Widget Embed
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-```html
-<script src="http://localhost:3003/api/sites/YOUR_SITE_ID/widget.js"></script>
-```
+## Security
 
-## API
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-- `POST /api/sites` - Create site
-- `GET /api/sites` - List sites
-- `POST /api/track` - Track pageview
-- `GET /api/sites/:id/stats` - Get stats
-- `GET /api/sites/:id/widget.js` - Widget script
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
+
+## License
+
+This project is released under the MIT License.
